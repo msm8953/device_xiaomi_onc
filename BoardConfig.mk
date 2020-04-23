@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/onclite
+DEVICE_PATH := device/xiaomi/onc
 
 # Architecture
 TARGET_ARCH := arm64
@@ -47,8 +47,8 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE :=  2048
 BOARD_BOOTIMG_HEADER_VERSION := 1
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
-TARGET_KERNEL_SOURCE := kernel/xiaomi/onclite
-TARGET_KERNEL_CONFIG := onclite-perf_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/onc
+TARGET_KERNEL_CONFIG := onc-perf_defconfig
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_DTBOIMG_PARTITION_SIZE := 8388608
 TARGET_KERNEL_ARCH := arm64
@@ -224,4 +224,4 @@ WIFI_HIDL_FEATURE_DISABLE_AP_MAC_RANDOMIZATION := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
--include vendor/xiaomi/onclite/BoardConfigVendor.mk
+-include vendor/xiaomi/onc/BoardConfigVendor.mk

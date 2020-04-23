@@ -18,7 +18,7 @@
 
 set -e
 
-DEVICE=onclite
+DEVICE=onc
 VENDOR=xiaomi
 
 INITIAL_COPYRIGHT_YEAR=2017
