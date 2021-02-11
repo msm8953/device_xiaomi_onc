@@ -27,7 +27,7 @@ INITIAL_COPYRIGHT_YEAR=2017
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
-AOSP_ROOT="$MY_DIR"/../../..
+AOSP_ROOT="$MY_DIR"/../../../..
 
 HELPER="$AOSP_ROOT"/vendor/arrow/build/tools/extract_utils.sh
 if [ ! -f "$HELPER" ]; then
